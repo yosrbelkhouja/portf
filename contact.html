@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon contact</title>
+    <link rel="icon" type="image/jpg" href="image/logo.jpg">
+    <link rel="stylesheet" href="style2.css"
+</head>
+<body>
+    <nav>
+        <h1>
+         Mon contact
+        </h1> 
+            <div class="onglets">
+                <a href="index.html" class="lien-accueil">Accueil</a>
+                <a href="parcours.html" class="lien-parcours">Parcours Académique</a>
+                <a href="experience.html" class="lien-experience">Expérience</a>
+                <a href="contact.html" class="lien-contact">Contact</a>  
+            </div>
+     <div class="spacer"></div>
+     </nav>
+        
+    </table><hr/>
+        <section id="contact" class="contact">
+		<table>
+			<tr>
+                <td><div class="contact__wrapper wrapper--large">
+				
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-86.12345678901234!3d40.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40.1234567!2D-86.1234567!5e0!3m2!1sen!2sus!4v1234567890123" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				
+            </td  width="100%"> <p>Je suis ravie que vous ayez pris le temps de parcourir mon portfolio en ligne. Si vous souhaitez discuter de projets passionnants, explorer des opportunités de collaboration, ou simplement échanger des idées, n'hésitez pas à me contacter. Je suis ouverte aux nouvelles perspectives et toujours prête à établir de nouvelles connexions.</p>
+			<pre class="coordonnees">
+                Mes coordonnées :
+                - Adresse Email :yosr.belkhouja@esprit.com
+                - Téléphone :+216 26 210 925
+                </pre>	
+				<td><p>N'hésitez pas à utiliser le formulaire ci-dessous pour m'envoyer un message directement. Je m'efforcerai de vous répondre dans les plus brefs délais.
+                </p>
+                <form class="contact__form" onsubmit="return validateForm()">
+                    <input class="contact__form-el contact__form-el--name" type="text" id="nameInput" placeholder="Your Name" spellcheck="false">
+                    <input class="contact__form-el contact__form-el--email" type="email" id="emailInput" placeholder="Your Email" spellcheck="false">
+                    <textarea class="contact__form-el contact__form-el--message" id="messageInput" placeholder="Your Message"></textarea>
+                    <input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+                </form>
+                
+                <script>
+                function validateForm() {
+                    var nameInput = document.getElementById('nameInput').value;
+                    var emailInput = document.getElementById('emailInput').value;
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                    if (nameInput.trim() === '' || emailInput.trim() === '') {
+                        alert('Veuillez remplir tous les champs obligatoires.');
+                        return false; 
+                    }
+                
+                    if (!emailRegex.test(emailInput)) {
+                        alert('Veuillez saisir une adresse e-mail valide.');
+                        return false; 
+                    }
+                    return true; 
+                }
+                </script>
+            </td>
+			
+        </tr>
+        </table>
+        <h1>Merci encore pour votre visite, et j'attends avec impatience de pouvoir échanger avec vous !</h1>
+		</section>
+<footer>
+    <p>&copy; 2023 Mon Portfolio en Ligne | Conçu par YOSR BELKHOUJA</p>
+</footer>
+</body>
+</html>
